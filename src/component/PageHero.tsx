@@ -2,7 +2,7 @@ import { FC } from "react";
 import { motion } from "framer-motion";
 
 interface PageHeroProps {
-  title: string;
+  title?: string;
   subTitle: string;
 }
 
