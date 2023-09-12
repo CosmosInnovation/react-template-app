@@ -11,3 +11,12 @@ export interface SignUpFormData {
   password: string;
   confirmPassword: string;
 }
+
+export interface ProfileFormData {
+  firstName?: string;
+  lastName?: string;
+  email?: string;
+  currentPassword?: string;
+  newPassword?: string;
+  confirmNewPassword?: string;
+}

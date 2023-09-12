@@ -1,15 +1,13 @@
 import { FC } from "react";
 import PageHero from "../component/PageHero";
 
-
 interface ProductThinkingPageProps {
-
 }
 
 export const ProductThinkingPage: FC<ProductThinkingPageProps> = () => {
   return (
-  <div className="min-h-screen flex justify-center items-center">
-    <div className="flex flex-col h-20 text-center" />
+  <div className="min-h-screen flex justify-center items-center mt-20">
+    <div className="flex flex-col h-20 text-center"/>
 
     <div className="flex-wrap 
         w-[100%] 

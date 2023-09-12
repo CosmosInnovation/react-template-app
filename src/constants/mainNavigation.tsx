@@ -1,9 +1,9 @@
 import { ProductThinkingPage } from "../page/ProductThinkingPage";
 import { BlogPage } from "../page/Blog";
 import { Projects } from "../page/ProjectsPage";
-import { PrivateDashboardPage } from "../page/PrivateDashboard";
-import { LoginPage } from "../authentication/Login";
-import { SignUp } from "../authentication/SignUp";
+import { PrivateDashboardPage } from "../page/dashboard/PrivateDashboard";
+import { LoginPage } from "../page/authentication/Login";
+import { SignUp } from "../page/authentication/SignUp";
 import { Hero } from "../component/Hero";
 
 export interface NavItemProps {
@@ -15,7 +15,7 @@ export interface NavItemProps {
 }
 
 // Add or remove navigation from here
-export const navigationRecord: NavItemProps[] = [
+export const mainNavigation: NavItemProps[] = [
   {
     name: 'Home',
     path: '/',
@@ -24,31 +24,32 @@ export const navigationRecord: NavItemProps[] = [
   {
     name: 'Product Thinking',
     path: '/product-thinking',
-    element: <ProductThinkingPage/>
+    element: <ProductThinkingPage />
   },
   {
     name: 'Blog',
     path: '/bite-blog',
-    element: <BlogPage/>
+    element: <BlogPage />
   },
   {
     name: 'Projects',
     path: '/projects',
-    element: <Projects/>
+    element: <Projects />
   },
   {
     name: 'Private Dashboard',
     path: '/dashboard',
-    element: <PrivateDashboardPage/>
+    element: <PrivateDashboardPage />
   },
   {
     name: 'Login',
     path: '/login',
-    element: <LoginPage/>
+    element: <LoginPage />
   },
   {
     name: 'Register',
     path: '/register',
-    element: <SignUp/>
+    element: <SignUp />
   },
-]
+];
+

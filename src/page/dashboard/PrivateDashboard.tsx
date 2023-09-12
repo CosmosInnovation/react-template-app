@@ -1,5 +1,5 @@
 import { FC } from "react";
-import PageHero from "../component/PageHero";
+import PageHero from "../../component/PageHero";
 
 interface PrivateDashboardProps {
 
@@ -7,10 +7,8 @@ interface PrivateDashboardProps {
 
 export const PrivateDashboardPage: FC<PrivateDashboardProps> = () => {
   return (
-    <div className="flex justify-center items-center ">
-
+    <div className="flex justify-center items-center">
       <div className="flex flex-col h-20 text-center" />
-
       <div className="flex-wrap 
         w-[100%] 
         h-[100%] 

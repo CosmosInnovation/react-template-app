@@ -60,7 +60,6 @@ const ProjectCard: FC<ProjectItem> = ({ logo, desc, contributorsPlusTask, techno
   console.log(cardBg)
 
   return (
-
     <div className="flex w-full sm:flex-col md:flex-row l:flex-row">
       <div className="
           h-[300px]
@@ -92,10 +91,10 @@ const ProjectCard: FC<ProjectItem> = ({ logo, desc, contributorsPlusTask, techno
 
 
 export const Projects: FC<ProjectsProps> = () => {
-  return (
-    <div className="min-h-screen flex justify-center items-center ">
-      <div className="flex flex-col h-20 text-center" />
 
+  return (
+    <div className="min-h-screen flex justify-center items-center mt-20">
+      <div className="flex flex-col h-20 text-center" />
       <div className="flex-wrap 
         w-[100%] 
         h-[100%] 
@@ -103,11 +102,10 @@ export const Projects: FC<ProjectsProps> = () => {
         justify-center 
         items-center 
         gap-[60px] 
-        inline-flex
+        inline-flex 
         2xl:w-[1260px]
         m-auto
       ">
-
         <PageHero title="Projects" subTitle="Products 🎉" />
 
         <div className="flex flex-col gap-4" />

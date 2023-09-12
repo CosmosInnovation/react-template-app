@@ -9,7 +9,7 @@ export const request = async (
 ): Promise<AxiosResponse> => {
   
   const url = `${END_POINTS.BASE_URL}${endpoint}`;
-  const token = await getJWToken();
+  const token = getJWToken();
   const headers = {
     "Content-Type": "application/json",
     Authorization: `Bearer ${token ? token : ''}`,

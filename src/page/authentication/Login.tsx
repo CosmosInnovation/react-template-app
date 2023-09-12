@@ -1,11 +1,11 @@
 import { FC } from "react";
 import { motion } from 'framer-motion';
 import * as Yup from 'yup';
-import Input from "../component/Input";
+import Input from "../../component/Input";
 import { Formik } from "formik";
-import { setAuth } from "../redux/authSlice";
+import { setAuth } from "../../redux/authSlice";
 import { useDispatch } from "react-redux";
-import { LoginFormData } from "../interface/formData";
+import { LoginFormData } from "../../interface/formData";
 
 interface LoginPageProps { }
 
@@ -37,8 +37,8 @@ export const LoginPage: FC<LoginPageProps> = () => {
 
   return (
     <motion.div
-      initial={{ opacity: 0, scale: 0.5 }}
-      animate={{ opacity: 1, scale: 1 }}
+      initial={{ y: "-100vh", opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
       transition={{ duration: .6 }}
     >
       <div className="flex mt-20">

@@ -80,7 +80,6 @@ export const BlogPage: FC<BlogPageProps> = () => {
         justify-center 
         items-center 
         gap-[60px] 
-  
         inline-flex 
         2xl:w-[1260px]
         m-auto

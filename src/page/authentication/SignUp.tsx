@@ -2,8 +2,8 @@ import { FC } from "react";
 import { motion } from 'framer-motion';
 import * as Yup from 'yup';
 import { Formik } from "formik";
-import Input from "../component/Input";
-import { SignUpFormData } from "../interface/formData";
+import Input from "../../component/Input";
+import { SignUpFormData } from "../../interface/formData";
 
 interface SignUpProps { }
 
@@ -24,8 +24,8 @@ export const SignUp: FC<SignUpProps> = () => {
 
   return (
     <motion.div
-      initial={{ opacity: 0, scale: 0.5 }}
-      animate={{ opacity: 1, scale: 1 }}
+      initial={{ y: "-100vh", opacity: 0 }}
+      animate={{ y: 1, opacity: 1 }}
       transition={{ duration: .6 }}>
       <div className="flex mt-20">
         <div className="flex flex-col h-20" />
