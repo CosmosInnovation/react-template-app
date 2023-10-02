@@ -15,12 +15,12 @@ const Input: FC<InputProps> = ({ error, value, placeholder, onChange, type, id, 
   return (
     <div className="flex flex-col w-full">
        {label ? (
-        <p>
+        <div className='py-2'>
           {label}
-        </p>
+        </div>
       ) : null}
       <input
-        className="mb-4 p-4 w-full bg-white rounded border border-indigo-300 outline-none text-sm transition duration-150 ease-in-out"
+        className="mb-4 p-4 w-full bg-white rounded border border-black outline-none text-sm transition duration-150 ease-in-out"
         id={id}
         type={type}
         value={value}

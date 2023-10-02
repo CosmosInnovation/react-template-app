@@ -1,6 +1,7 @@
-import { PrivateDashboardPage } from "../page/dashboard/PrivateDashboard";
-import { Profile } from '../page/dashboard/Profile';
-import { Subscription } from '../page/dashboard/Subscription';
+import TestPage from '../../../page/TestPage';
+import { PrivateDashboardPage } from "../../../page/dashboard/MainDashboard";
+import { Profile } from '../../../page/dashboard/Profile';
+import { Subscription } from '../../../page/dashboard/Subscription';
 
 export interface NavItemProps {
   name: string,
@@ -13,6 +14,16 @@ export interface NavItemProps {
 // Add or remove navigation from here
 export const subNavigation: NavItemProps[] = [
   {
+    name: 'Dashboard',
+    path: '/dashboard',
+    element: <PrivateDashboardPage />
+  },
+  {
+    name: 'TestPage',
+    path: '/dashboard/test',
+    element: <TestPage />
+  },
+  {
     name: 'Subscription',
     path: '/dashboard/subscription',
     element: <Subscription />
@@ -21,11 +32,6 @@ export const subNavigation: NavItemProps[] = [
     name: 'Profile',
     path: '/dashboard/profile',
     element: <Profile />
-  },
-  {
-    name: 'Private Dashboard',
-    path: '/dashboard',
-    element: <PrivateDashboardPage />
   }
 ];
 

@@ -1,9 +1,9 @@
 import { Route, Routes, BrowserRouter } from "react-router-dom";
-import HeaderMenu from './component/HeaderMenu';
-import { Footer } from './component/Footer';
-import { NotFound } from './component/NotFound';
-import { NavItemProps, mainNavigation } from "./constants/mainNavigation";
-import { subNavigation } from './constants/subNavigation';
+import HeaderMenu from './component/menu/HeaderMenu';
+// import { Footer } from './component/Footer';
+import { NotFound } from './page/NotFound';
+import { NavItemProps, mainNavigation } from "./component/menu/constants/HeaderTopMenuList";
+import { subNavigation } from './component/menu/constants/SidebarMenuList';
 import Layout from './page/dashboard/Layout';
 
 const  App = () => {
@@ -22,7 +22,7 @@ const  App = () => {
         )}
         <Route path='*' element={<NotFound />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </BrowserRouter>
   )
 }

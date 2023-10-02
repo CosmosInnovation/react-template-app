@@ -1,9 +1,9 @@
 import { FC } from "react";
 
-import gapFundr from '../assets/gapFundr.svg';
-import cheffaire from '../assets/cheffaire.svg';
-import guide from '../assets/guide.svg';
-import PageHero from "../component/PageHero";
+import gapFundr from '../../assets/gapFundr.svg';
+import cheffaire from '../../assets/cheffaire.svg';
+import guide from '../../assets/guide.svg';
+import HeroSection from "../../component/HeroSection";
 
 
 interface ProjectsProps {
@@ -77,7 +77,7 @@ const ProjectCard: FC<ProjectItem> = ({ logo, desc, contributorsPlusTask, techno
         <p className="text-lg font-bold">[ description ] 🚀</p>
         <p className="text-lg font-normal">{desc}</p>
         <p className="text-lg font-medium">[ technologies ]</p>
-        <p className="text-md font-normal">{ technologies }</p>
+        <p className="text-md font-normal">{technologies}</p>
         <p className="text-lg font-medium">[ contributors ]</p>
         {contributorsPlusTask.map((item, idx) => (
           <div className="text-md font-normal underline" key={idx}> {item}</div>
@@ -93,8 +93,8 @@ const ProjectCard: FC<ProjectItem> = ({ logo, desc, contributorsPlusTask, techno
 export const Projects: FC<ProjectsProps> = () => {
 
   return (
-    <div className="min-h-screen flex justify-center items-center mt-20">
-      <div className="flex flex-col h-20 text-center" />
+    <div className="min-h-screen flex justify-center items-center ">
+      <div className="flex flex-col text-center" />
       <div className="flex-wrap 
         w-[100%] 
         h-[100%] 
@@ -105,23 +105,22 @@ export const Projects: FC<ProjectsProps> = () => {
         inline-flex 
         2xl:w-[1260px]
         m-auto
+        mt-20
       ">
-        <PageHero title="Projects" subTitle="Products 🎉" />
-
-        <div className="flex flex-col gap-4" />
-
-        {projects.map((item, idx) => (
-          <ProjectCard
-            key={idx}
-            logo={item.logo}
-            name={item.name}
-            technologies={item.technologies}
-            desc={item.desc}
-            cardBg={item.cardBg}
-            contributorsPlusTask={item.contributorsPlusTask} />
-        ))
-        }
-
+        <HeroSection title="Projects" subTitle="Products 🎉" />
+        <div className='md:p-4'>
+          {projects.map((item, idx) => (
+            <ProjectCard
+              key={idx}
+              logo={item.logo}
+              name={item.name}
+              technologies={item.technologies}
+              desc={item.desc}
+              cardBg={item.cardBg}
+              contributorsPlusTask={item.contributorsPlusTask} />
+          ))
+          }
+        </div>
       </div>
     </div>)
 }

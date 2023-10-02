@@ -1,5 +1,5 @@
 import { FC } from "react";
-import PageHero from "../component/PageHero";
+import HeroSection from "../../component/HeroSection";
 
 interface BlogPageProps {
 
@@ -74,7 +74,7 @@ export const BlogPage: FC<BlogPageProps> = () => {
   return (
     <div className="flex justify-start">
       <div className="flex-wrap 
-        w-[100%] 
+        w-[100%]
         h-[100%] 
         flex-col 
         justify-center 
@@ -85,16 +85,14 @@ export const BlogPage: FC<BlogPageProps> = () => {
         m-auto
       ">
 
-        <PageHero title="Blogs" subTitle="Bite-Sized Blog 🎉" />
+        <HeroSection title="Blogs" subTitle="Bite-Sized Blog 🎉" />
 
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 m-4">
           {blogList.map(() => (
             <BlogCard dateTime={'11:00 AM on August 1, 2023'} author={'Taban Cosmos'} title={'AI ML in Fin-Tech'} shortDescription={'Artificial Intelligence (AI) can significantly impact the finance industry by enhancing efficiency, accuracy, and decision-making. Here are some ways AI can help finance:'} />
           ))
           }
-
         </div>
-
         <div className="flex flex-col h-20" />
 
       </div>

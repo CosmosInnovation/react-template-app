@@ -3,7 +3,16 @@ import { ComponentDirectionProps } from "./PropInterface"
 
 export const Column: FC<ComponentDirectionProps> = ({ children, ...other }) => {
   return (
-    <section className="flex flex-wrap p-4 column" {...other}>
+    <section className="flex-wrap 
+        w-[100%]
+        h-[100%] 
+        flex-col 
+        justify-center 
+        items-center 
+        inline-flex 
+        lg:w-[50%]
+        m-auto
+      " {...other}>
       { children }
     </section>)
 }

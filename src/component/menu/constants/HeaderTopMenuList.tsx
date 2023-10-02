@@ -1,10 +1,10 @@
-import { ProductThinkingPage } from "../page/ProductThinkingPage";
-import { BlogPage } from "../page/Blog";
-import { Projects } from "../page/ProjectsPage";
-import { PrivateDashboardPage } from "../page/dashboard/PrivateDashboard";
-import { LoginPage } from "../page/authentication/Login";
-import { SignUp } from "../page/authentication/SignUp";
-import { Hero } from "../component/Hero";
+import { ProductThinkingPage } from "../../../page/project/ProductThinkingPage";
+import { BlogPage } from "../../../page/blog/Blog";
+import { Projects } from "../../../page/project/ProjectsPage";
+import { LoginPage } from "../../../page/authentication/Login";
+import { SignUp } from "../../../page/authentication/SignUp";
+import { Hero } from "../../Heros";
+import WaitListForm from '../../../page/form/WaitListForm';
 
 export interface NavItemProps {
   name: string,
@@ -21,6 +21,12 @@ export const mainNavigation: NavItemProps[] = [
     path: '/',
     element: <Hero />
   },
+
+  {
+    name: 'Wait List',
+    path: '/wait-list',
+    element: <WaitListForm />
+  },
   {
     name: 'Product Thinking',
     path: '/product-thinking',
@@ -35,11 +41,6 @@ export const mainNavigation: NavItemProps[] = [
     name: 'Projects',
     path: '/projects',
     element: <Projects />
-  },
-  {
-    name: 'Private Dashboard',
-    path: '/dashboard',
-    element: <PrivateDashboardPage />
   },
   {
     name: 'Login',

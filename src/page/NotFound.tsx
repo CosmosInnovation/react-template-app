@@ -1,7 +1,7 @@
 import { FC } from "react";
-import PageHero from "./PageHero";
+import HeroSection from "../component/HeroSection";
 
-interface NotFoundProps { }
+interface NotFoundProps {}
 
 export const NotFound: FC<NotFoundProps> = () => {
   return (
@@ -18,7 +18,7 @@ export const NotFound: FC<NotFoundProps> = () => {
         2xl:w-[1260px]
         m-auto"
       >
-        <PageHero subTitle="404 Not Found" />
+        <HeroSection subTitle="404 Not Found" />
         <div className="flex flex-col h-20" />
       </div>
     </div>)

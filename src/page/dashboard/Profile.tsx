@@ -1,6 +1,5 @@
 import { Formik } from 'formik';
 import { FC } from "react";
-import { useDispatch } from 'react-redux';
 import * as Yup from 'yup';
 import { ProfileFormData } from '../../interface/formData';
 import Input from '../../component/Input';
@@ -32,9 +31,10 @@ export const Profile: FC<ProfileProps> = () => {
   }
 
   return (
-    <div className="flex justify-center items-center mt-20">
-      <div className="flex flex-col h-20 text-center" />
+    <div className="flex justify-center items-center">
+      {/* <div className="flex flex-col h-20 text-center" /> */}
       <div className="flex-wrap 
+       mt-20
         w-[100%] 
         h-[100%] 
         flex-col 
