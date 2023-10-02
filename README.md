@@ -1,10 +1,7 @@
-# Learn with Cosmos
+## Learn with Cosmos
+This React app is built using Typescript as the main language, along with several other libraries including Tailwind CSS, Framer Motion, Formik for form handling, and Vite for fast development and building.
+## How to use the repo:
+- Clone the project and start editing it to suit your needs.
+- This is a basic starter project, but I plan to continue building it and making it more robust so that anyone looking to build something quickly can clone it and use it as a foundation.
 
-
-## Steps to create react app with, tailwindcss, framer motion using vite
-
-- npm create vite@latest LearnwithCosmos-Website
-- npm install -D tailwindcss postcss autoprefixer
-- npx tailwindcss init -p
-
-
+Note: If you have any feature requests or suggestions, please let me know. This is an ongoing project and I'm always looking for ways to improve it.
