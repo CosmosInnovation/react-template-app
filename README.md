@@ -4,6 +4,7 @@ This React app is built using Typescript as the main language, along with severa
 ## How to use the repo:
 - Clone the project and start editing it to suit your needs.
 - This is a basic starter project, but I plan to continue building it and making it more robust so that anyone looking to build something quickly can clone it and use it as a foundation.
+git commit -m "Add steps on how to use the app"
 
 ## Steps: 
 - gh repo clone CosmosInnovation/react-template-app or your preferred method to get the repository
